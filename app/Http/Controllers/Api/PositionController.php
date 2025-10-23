@@ -21,6 +21,7 @@ class PositionController extends Controller
             // 'status' => 'required|string|max:1',
             'title' => 'required|string|max:255',
             'boards_id' => 'required|exists:boards,id',
+            'position_order' => 'required|integer'
         ]);
 
         $position = Position::create($validated);

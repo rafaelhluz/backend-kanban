@@ -8,11 +8,12 @@ class Tasks extends Model
 {
     protected $fillable = [
         'title',
-        'descricao',
+        'description',
         'id_users',
         'id_positions',
         'dt_start',
         'dt_end',
+        'asign_users'
     ];
 
     public function user()

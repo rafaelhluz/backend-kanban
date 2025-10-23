@@ -16,7 +16,7 @@ class StepController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'completed' => 'required|string|max:1',
+            'completed' => 'nullable|boolean|max:1',
             'description' => 'nullable|string',
             'id_users' => 'required|exists:users,id',
             'id_tasks' => 'required|exists:positions,id',
